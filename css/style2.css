@@ -1,0 +1,47 @@
+
+body {
+  background-color: #252525;
+  font-family: "Ruwudu", serif;
+}
+#p1 {
+    background-color: aqua;
+  }
+  #p2 {
+  background-color: lightgreen;
+  }
+  #p3{
+    background-color: lightcoral;
+  }
+  #PP{
+    color: cornflowerblue;
+  }
+  #h2{
+  text-align: center;
+  background-color: rgb(208, 203, 203);
+  height: 30px;
+  }
+img {
+    height: 230px;
+    width: 160px;
+}
+table {
+  border: 5px dashed red;
+  cursor: pointer;
+}
+text area ::placeholder {
+  font-style: italic;
+  font-size: 25px;
+  font-family: Arial;
+  font-weight: bold;
+}
+label {
+  display: block;
+  width: 200px;
+  float: left;
+  text-align: left;
+ clear: left;
+}
+iframe {
+  width: 1155px;
+  height: 500px;
+}

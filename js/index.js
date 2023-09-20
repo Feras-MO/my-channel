@@ -1,9 +1,9 @@
 
 function openNav () {
-    document.getElementById ("snd").style.width = "250px";
+    document.getElementById ("sidenav").style.width = "250px";
 }
 function closeNav () {
-    document.getElementById ("snd").style.width = "0";
+    document.getElementById ("sidenav").style.width = "0";
 }
  // this function change background color
  function changeColor(black) { document.body.style.backgroundColor = black; }

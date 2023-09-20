@@ -1,34 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width , initial-scale=1.0">
-  <title>Channel HomePage</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="1692602905.ico" type="image/x-icon">
-</head>
-<h1 id="h1"> Feras Mo </h1>
-<h3>Industry</h3>
-<body>
-<a href="https://www.youtube.com/@Feras_Mo/featured" target="_blank">
-  <img  id="img" src="test/channels4_profile.jpg">
-</a>
-<br>
-<div class="vertical-menu">
-  <a  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUTcmljayBhc3RsZXkgZ2l2ZSB1cA%3D%3D" class="active">Home</a>
-  <a href="mailto:@ferasghoul@gmail.com" class="top-right">Contact US</a>
-<a href="html/about_us.html" class="lol">About Us</a>
-<p></p>
-</div>
-<div id="snd" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn"
-  onclick="closeNav()">&times;</a>
-  <a  href="#" onclick="changeColor('white')">Light Mode</a>
-  <br>
-  <a  href="#" onclick="changeColor('black')">Dark Mode</a>
-  <br>
-  <a  href="#" onclick="changeColor('#444')">Default Mode</a>
-</div>
-<script src="js/index.js"></script>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()"><img id="feras" src="test/R.png"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Should I watch it?</h1>
+      <form id="form">
+        <input type="text" placeholder="Search" id="search" class="search" />
+      </form>
+    </header>
+    <main id="main"></main>
+    <footer class="footer">
+      <p>
+        This project uses the TMDb API but is not endorsed or certified by TMDb.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

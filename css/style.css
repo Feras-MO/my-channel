@@ -126,7 +126,7 @@ background-color: #00bac7;
   padding-top: 60px;
 }
 #feras {
-  position: fixed;
+  position: absolute;
 display: grid;
 top: 0px;
 height: 60px;

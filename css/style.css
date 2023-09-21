@@ -1,82 +1,83 @@
-
 body {
-  background-color:  #444;
-}
-#span {
-  color: rgb(19, 197, 210);
+    background-color: #444;
 }
 a {
- height: 0.4cm;
+    height: 0.4cm;
+}
+.title {
+    margin: 100px 0 50px;
 }
 #h1 {
-  text-shadow: 0 0 3.4px rgba(18, 183, 208, 0.715), 0 0 6px black;
-  color: white;
-  font-size: 3.5rem;
-  font-family: "Space Mono" monospace;
+    text-shadow: 0 0 3.4px rgba(18, 183, 208, 0.715), 0 0 6px black;
+    color: white;
+    font-size: 3.5rem;
+    font-family: "Space Mono" monospace;
+    margin: 0;
 }
- 
-h3{
+
+h3 {
     height: auto;
     text-align: center;
-    text-shadow: 0 0 2px black, 0  0 6px rgba(10, 2, 3, 0.781), 1px 0 black, 0 -1px black;
-color: rgba(100, 107, 117, 0.724);
-  }
-  @keyframes move  {
-   50% {
-      left: 700px;
-    
+    text-shadow: 0 0 2px black, 0 0 6px rgba(10, 2, 3, 0.781), 1px 0 black,
+        0 -1px black;
+    color: rgba(100, 107, 117, 0.724);
+}
+@keyframes move {
+    0% {
+        left: 100%;
     }
-    50% {
-      right: 1000px;
+    100% {
+        left: 0%;
     }
-  }
-  
+}
+
+.movement-container {
+    position: relative;
+    margin: 0 62.5px;
+}
 #img {
-display: flex;
-border: 3px solid  whitesmoke;
-position: fixed;
-    left: 400px;
+    border: 3px solid whitesmoke;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
     width: 100px;
-    height: 100px;
-    border-radius : 50%;
-    animation: move 4.4s ease-in-out infinite;
+    border-radius: 50%;
+    animation: move 4.4s ease-in-out -2.1s infinite alternate;
 }
 
-
-.vertical-menu{
-    width: 10%;
-}
-  
-  .vertical-menu a {
+.vertical-menu a {
     background-color: #b3b3b3;
     color: black;
     display: block;
     padding: 14px;
     text-decoration: none;
-  }
-  
-  .vertical-menu a.top-right:hover {
+    margin: 2px 0;
+    border-radius: 7px;
+    transition: background-color 0.3s;
+}
+
+.vertical-menu a.top-right:hover {
     background-color: #00bac7;
-  }
+}
 .vertical-menu a.active:hover {
     background-color: #00bac7;
 }
-  .vertical-menu a.active {
-    background-color: #04AA6D; }
-    #h1 {
-        text-align: center;
-    }
-    a.top-right {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-      }
+.vertical-menu a.active {
+    background-color: #04aa6d;
+}
+#h1 {
+    text-align: center;
+}
+a.top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 a.active {
     position: absolute;
     top: 10px;
     right: 120px;
-   
-}      
+}
 a.about_us {
     position: absolute;
     bottom: 10px;
@@ -84,56 +85,54 @@ a.about_us {
     background-color: #b3b3b3;
 }
 .vertical-menu a.about_us:hover {
-background-color: #00bac7;
+    background-color: #00bac7;
 }
 
 .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+    color: #f1f1f1;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
 }
 
 .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 #feras {
-  position: fixed;
-display: grid;
-top: 0px;
-height: 60px;
-width: 60px;
-max-width: 100px;
-max-height: 100px;
-
-}
-@media screen and (max-height: 450px) {
-  
+    position: fixed;
+    top: 10px;
+    width: 47px;
+    max-width: 100px;
+    max-height: 100px;
 }

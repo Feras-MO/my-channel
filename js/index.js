@@ -7,4 +7,4 @@ function closeNav() {
 function changeColor(black) {
     document.body.style.backgroundColor = black;
 }
-console.log("badr is the dumbest");
+console.log("Badr is the dumbest");
